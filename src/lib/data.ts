@@ -18,7 +18,7 @@ export const site = {
   facebook: "https://www.facebook.com/pizzashtt",
   instagram: "https://www.instagram.com/ebijvpns",
   motto: "The Sun Always Rises",
-  schedulingUrl: "#", // Add your Calendly or meeting link here
+  schedulingUrl: "https://calendly.com/jvvpns-business/consultation",
 };
 
 export const techStack = {
