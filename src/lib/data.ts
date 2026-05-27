@@ -182,4 +182,32 @@ export const awards = [
   "Best Programmer Award: College of Computer Studies, Central Philippine University (S.Y. 2025-2026)",
   "Best Thesis Award: \"Recipe-Generating Mobile Application Using YOLO and Transformer-Based Language Models\"",
   "Excellence Award and Apex Award: Recognized by DOST-CPUGAD TBI SKYBOUND for outstanding performance and commitment to student leadership",
+  "Ready, Spark, Charge: Hacking the Future of Energy 2026 | 3-day Hackathon Grand Champion"
+];
+
+export const certificates = [
+  {
+    title: "Best Programmer Award",
+    issuer: "College of Computer Studies, Central Philippine University",
+    year: "2026",
+    imageUrl: "" // Add your image URL here
+  },
+  {
+    title: "Best Thesis Award",
+    issuer: "College of Computer Studies, Central Philippine University",
+    year: "2026",
+    imageUrl: "" // Add your image URL here
+  },
+  {
+    title: "SKYBOUND Excellence and Apex Award",
+    issuer: "DOST-CPUGAD TBI",
+    year: "2026",
+    imageUrl: "" // Add your image URL here
+  },
+  {
+    title: "Ready, Spark, Charge Hackathon Grand Champion",
+    issuer: "New Energy Nexus - Philippines",
+    year: "2026",
+    imageUrl: "/assets/awards/rsc_2026.webp" // Notice: no 'public' in the path
+  }
 ];
