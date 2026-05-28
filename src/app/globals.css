@@ -358,3 +358,31 @@ a, button {
     font-size: 1.75rem !important;
   }
 }
+
+/* ── Chat Modal ── */
+.chat-modal {
+  position: fixed;
+  bottom: 6rem;
+  right: 2rem;
+  width: clamp(320px, 90vw, 400px);
+  height: min(550px, 70vh);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .chat-modal {
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100dvh; /* Or 100vh if dvh not fully supported, but dvh handles keyboard better */
+    border-radius: 0;
+    border: none;
+  }
+}

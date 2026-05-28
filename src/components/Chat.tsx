@@ -23,6 +23,15 @@ export default function Chat() {
   const [targetText, setTargetText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
 
+  // Body overflow to prevent scroll on mobile when chat open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isOpen]);
+
   // Auto-scroll
   useEffect(() => {
     if (scrollRef.current) {
@@ -141,24 +150,7 @@ export default function Chat() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div
-          className="fade-up"
-          style={{
-            position: 'fixed',
-            bottom: '6rem',
-            right: '2rem',
-            width: 'clamp(320px, 90vw, 400px)',
-            height: 'min(550px, 70vh)',
-            background: 'var(--bg)',
-            border: '1px solid var(--border)',
-            borderRadius: '16px',
-            display: 'flex',
-            flexDirection: 'column',
-            boxShadow: 'var(--shadow-md)',
-            zIndex: 1000,
-            overflow: 'hidden',
-          }}
-        >
+        <div className="fade-up chat-modal">
           {/* Header */}
           <div style={{ padding: '1rem', borderBottom: '1px solid var(--border)', background: 'var(--surface)', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <img 
