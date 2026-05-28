@@ -104,15 +104,15 @@ export default function Chat() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         style={{
+          display: isOpen ? 'none' : 'flex',
           position: 'fixed',
           bottom: '2rem',
           right: '2rem',
           height: '48px',
-          padding: isOpen ? '0 14px' : '0 20px',
+          padding: '0 20px',
           borderRadius: '24px',
           background: 'var(--accent)',
           color: 'var(--bg)',
-          display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           gap: '0.75rem',
@@ -173,6 +173,34 @@ export default function Chat() {
                 <p style={{ fontSize: '0.7rem', color: 'var(--text-secondary)', fontWeight: 600 }}>Online</p>
               </div>
             </div>
+            <button 
+              onClick={() => setIsOpen(false)}
+              style={{ 
+                marginLeft: 'auto',
+                background: 'var(--surface)', 
+                border: '1px solid var(--border)', 
+                borderRadius: '50%', 
+                width: '36px', 
+                height: '36px', 
+                minWidth: '36px',
+                minHeight: '36px',
+                flexShrink: 0,
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center', 
+                cursor: 'pointer', 
+                color: 'var(--text-primary)',
+                transition: 'all 0.2s ease',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                padding: 0
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'rotate(90deg)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'rotate(0deg)'}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
           </div>
 
           {/* Messages */}
@@ -252,7 +280,7 @@ export default function Chat() {
                 border: '1px solid var(--border)',
                 background: 'var(--surface)',
                 color: 'var(--text-primary)',
-                fontSize: '0.85rem',
+                fontSize: '16px', // 16px prevents iOS Safari zoom on focus
                 outline: 'none',
               }}
             />
