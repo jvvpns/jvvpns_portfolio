@@ -75,9 +75,6 @@ export const projects = [
       "EmailJS",
       "Vercel",
     ],
-    liveUrl: "https://ohrph-avenir-iloilo.vercel.app",
-    repoUrl: "https://github.com/jvvpns/ohr-aveniriloilo-v2",
-    previewUrl: "https://ohrph-avenir-iloilo.vercel.app",
   },
   {
     name: "ABYAN",
@@ -94,20 +91,14 @@ export const projects = [
       "PostgreSQL",
       "Tailwind CSS",
     ],
-    liveUrl: "https://abyan-peak.vercel.app",
-    repoUrl: "https://github.com/jvvpns/abyan",
-    previewUrl: "https://abyan-peak.vercel.app",
   },
   {
     name: "HILWAY",
     subtitle: "Lead Developer | Student Nurse Wellness Suite",
     year: "2026",
     description:
-      "Built an offline-first wellness platform with reliable synchronization for low-connectivity healthcare environments. Implemented AI-assisted support tools including chatbot assistance, shift-duty tracking, meal logging, and productivity features for nursing students.",
+      "Built an offline-first wellness platform designed for low-connectivity healthcare environments. Features include AI-assisted chatbot support, shift-duty tracking, meal logging, and productivity tools for nursing students. Currently under pilot testing as a PWA, with future deployment planned for iOS and Android.",
     tech: ["Flutter", "Firebase", "Google Gemini SDK", "Hive", "PWA"],
-    liveUrl: "https://hilway.vercel.app",
-    repoUrl: "#",
-    previewUrl: "https://hilway.vercel.app", // Add link later
   },
   {
     name: "ECOSCAN",
@@ -116,9 +107,6 @@ export const projects = [
     description:
       "Developed a mobile-first Progressive Web App to automate waste segregation workflows aligned with Philippine RA 9003 standards. Implemented secure server-side processing to protect system logic and prevent client-side data tampering.",
     tech: ["React", "TypeScript", "Supabase", "PWA"],
-    liveUrl: "https://ecoscan001.vercel.app/",
-    repoUrl: "#",
-    previewUrl: "https://ecoscan001.vercel.app/", // Add link later
   },
   {
     name: "DAPPLI",
@@ -127,9 +115,6 @@ export const projects = [
     description:
       "Developed an AI-powered culinary platform using computer vision with hybrid cloud and offline inference capabilities. Optimized real-time ingredient recognition through asynchronous background processing for faster and smoother user experience.",
     tech: ["Python", "YOLO", "Flutter", "Supabase"],
-    liveUrl: "#",
-    repoUrl: "#",
-    previewUrl: "", // Add link later
   }
 ];
 

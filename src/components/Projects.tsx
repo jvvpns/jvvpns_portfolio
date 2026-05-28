@@ -148,24 +148,13 @@ export default function Projects() {
           </button>
 
           <div className="modal-left" style={{ position: 'relative', overflow: 'hidden' }}>
-            {selectedProject.previewUrl ? (
-              <div style={{ width: '100%', height: '100%', pointerEvents: 'none', userSelect: 'none' }}>
-                <iframe 
-                  src={selectedProject.previewUrl} 
-                  style={{ width: '100%', height: '100%', border: 'none' }} 
-                  title={selectedProject.name}
-                  tabIndex={-1}
-                />
-              </div>
-            ) : (
               <div className="preview-placeholder">
                 <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><circle cx="8.5" cy="8.5" r="1.5" /><polyline points="21 15 16 10 5 21" />
                 </svg>
                 <p style={{ fontSize: '1.1rem', fontWeight: 700, marginTop: '1.5rem', color: 'var(--text-primary)' }}>System Discovery</p>
-                <p style={{ fontSize: '0.85rem', opacity: 0.8, maxWidth: '280px', lineHeight: 1.6 }}>Live interactive link for {selectedProject.name} is being prepared.</p>
+                <p style={{ fontSize: '0.85rem', opacity: 0.8, maxWidth: '280px', lineHeight: 1.6 }}>Contact the developer for a live interactive link to {selectedProject.name}.</p>
               </div>
-            )}
           </div>
 
           <div className="modal-right">
@@ -191,13 +180,6 @@ export default function Projects() {
             </div>
             
             <div style={{ display: 'flex', gap: '1rem', marginTop: 'auto' }}>
-              <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ flex: 1, padding: '1rem', fontWeight: 700, fontSize: '0.95rem' }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-                Live
-              </a>
-
             </div>
           </div>
         </div>
